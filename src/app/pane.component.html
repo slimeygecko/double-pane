@@ -1,0 +1,5 @@
+<select [(ngModel)]="pane.type">
+    <option *ngFor="let t of displayTypes" [ngValue]="t.id">{{t.name}}</option>
+</select>
+<input type="button" class="btn btn-primary" (click)="onClick(pane.type)" value="Click">
+<h1>{{displayValue}}</h1>
